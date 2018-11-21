@@ -1,0 +1,13 @@
+
+#playfield {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 33%;
+  border: 1px solid black;
+}
