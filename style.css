@@ -52,16 +52,60 @@ table {
 
 /* ------- End of reset code -------------*/
 
+body {
+	font-family: 'Black Han Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(leaves.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #playfield {
   width: 300px;
   height: 300px;
   display: flex;
   flex-wrap: wrap;
+	margin-top: 115px;
 }
 
 .box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
   box-sizing: border-box;
   width: 33%;
   height: 33%; /* Gör så att boxarna inte växer när man infogar ett X eller en cirkel */
-  border: 1px solid black;
+}
+
+#box3, #box6, #box9 {
+	border-left: 3px solid white;
+}
+
+#box1, #box4, #box7 {
+	border-right: 3px solid white;
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6 {
+	border-bottom: 3px solid white;
+}
+
+i {
+	color: white;
+}
+
+p {
+	font-size: 19px;
+	margin: 10px;
+	color: white;
+}
+
+button {
+	margin: 10px;
+	background-color: white;
+	width: 113px;
+  height: 44px;
+  border-radius: 14px;
+	opacity: 0.75;
 }
